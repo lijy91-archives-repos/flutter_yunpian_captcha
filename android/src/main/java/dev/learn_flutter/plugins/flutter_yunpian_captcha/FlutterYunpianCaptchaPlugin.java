@@ -254,15 +254,23 @@ public class FlutterYunpianCaptchaPlugin implements FlutterPlugin, MethodCallHan
         JSONObject jsonObject = null;
         try {
             jsonObject = new JSONObject(jsonString);
-
-            Iterator<String> keys = jsonObject.keys();
-            while (keys.hasNext()) {
-                String key = keys.next();
-                Object value = jsonObject.get(key);
-                map.put(key, value);
-            }
+            map = toMap(jsonObject);
         } catch (JSONException ex) {
             // skip;
+        }
+        return map;
+    }
+
+    private static Map<String, Object> toMap(JSONObject jsonObject) throws JSONException {
+        Map<String, Object> map = new HashMap<String, Object>();
+        Iterator<String> keys = jsonObject.keys();
+        while (keys.hasNext()) {
+            String key = keys.next();
+            Object value = jsonObject.get(key);
+            if (value instanceof JSONObject) {
+                value = toMap((JSONObject) value);
+            }
+            map.put(key, value);
         }
         return map;
     }

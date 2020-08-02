@@ -110,17 +110,19 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
-              SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    for (var log in _logs)
-                      Text(
-                        log,
-                      ),
-                  ],
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      for (var log in _logs)
+                        Text(
+                          log,
+                        ),
+                    ],
+                  ),
                 ),
               ),
             ],
