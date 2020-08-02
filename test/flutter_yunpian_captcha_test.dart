@@ -17,7 +17,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await FlutterYunpianCaptcha.platformVersion, '42');
+  test('getSDKVersion', () async {
+    expect(await YunPianCaptcha.sdkVersion, '42');
   });
 }

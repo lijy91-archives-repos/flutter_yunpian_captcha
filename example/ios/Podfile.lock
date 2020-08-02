@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_yunpian_captcha (0.0.1):
+    - Flutter
+    - YPCaptcha (~> 1.0.6)
+  - YPCaptcha (1.0.6)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_yunpian_captcha (from `.symlinks/plugins/flutter_yunpian_captcha/ios`)
+
+SPEC REPOS:
+  trunk:
+    - YPCaptcha
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_yunpian_captcha:
+    :path: ".symlinks/plugins/flutter_yunpian_captcha/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_yunpian_captcha: ef993dbf0926180f3ee41338f31cae21727f7e45
+  YPCaptcha: d165b80b7dfa509e81a9257b5632bab4a7b2a736
+
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+
+COCOAPODS: 1.9.1

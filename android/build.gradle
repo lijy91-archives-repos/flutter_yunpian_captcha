@@ -31,3 +31,7 @@ android {
         disable 'InvalidPackage'
     }
 }
+
+dependencies {
+    implementation 'com.yunpian:captcha:1.0.7'
+}
