@@ -2,9 +2,13 @@
 
 适用于 Flutter 的云片行为验证插件
 
+[![pub version][pub-image]][pub-url]
+
+[pub-image]: https://img.shields.io/pub/v/flutter_yunpian_captcha.svg
+[pub-url]: https://pub.dev/packages/flutter_yunpian_captcha
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 
 - [快速开始](#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
   - [安装](#%E5%AE%89%E8%A3%85)
@@ -34,7 +38,6 @@ $ flutter packages get
 ```
 
 ### 用法
-
 
 #### 获取 SDK 版本
 
